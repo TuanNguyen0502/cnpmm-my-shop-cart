@@ -19,7 +19,7 @@ export default defineConfig({
     rollupOptions: {
       // Đảm bảo không bundle react và react-dom vào thư viện
       // Vì dự án chính của người dùng đã có sẵn React rồi
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
         globals: {
           react: "React",
